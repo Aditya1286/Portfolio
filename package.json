@@ -11,7 +11,9 @@
   "dependencies": {
     "@react-three/drei": "^10.5.0",
     "@react-three/fiber": "^9.2.0",
+    "@types/three": "^0.178.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.3",
     "lottie-react": "^2.4.1",
     "mini-svg-data-uri": "^1.4.4",
     "motion": "^12.23.3",
@@ -22,6 +24,7 @@
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
+    "three": "^0.178.0",
     "three-globe": "^2.43.0"
   },
   "devDependencies": {
