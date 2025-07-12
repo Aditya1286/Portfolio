@@ -136,7 +136,29 @@ export const testimonials = [
     title: "Director of AlphaStream Technologies",
   },
 ];
-
+export const timeline = [
+  {
+    year: 2024,
+    title: "Lovely Professional University",
+    degree: "BTech in Computer Science and Engineering ",
+    icon: "/logo1.svg",
+    Marks: "SGPA: 9.4",
+  },
+  {
+    year: 2022,
+    title: "Trident Public School",
+    degree: "Class 12th",
+    icon: "/logo3.webp",
+    Marks: "86%",
+  },
+  {
+    year: 2020,
+    title: "G.D.Mother International School",
+    degree: "Metric",
+    icon: "/logo2.webp",
+    Marks: "92%",
+  }
+];
 export const companies = [
   {
     id: 1,
