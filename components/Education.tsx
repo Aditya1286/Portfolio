@@ -1,8 +1,9 @@
-import React from 'react';
-import { Timeline } from './ui/Timeline';
-import { timeline } from '@/data';
-import Image from 'next/image';
-const Experience = () => {
+import React from "react";
+import { Timeline } from "./ui/Timeline";
+import { timeline } from "@/data";
+import Image from "next/image";
+
+const Education = () => {
   const timelineData = timeline.map((item) => ({
     title: item.year.toString(),
     content: (
@@ -10,15 +11,15 @@ const Experience = () => {
         <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
           {/* Icon */}
           <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 rounded-full flex items-center justify-center overflow-hidden shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <Image 
-              src={item.icon} 
+            <Image
+              src={item.icon}
               alt={item.title}
               width={80}
               height={80}
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          
+
           {/* Content */}
           <div className="flex-1 w-full sm:w-auto">
             <h4 className="text-lg sm:text-xl lg:text-2xl font-bold text-neutral-900 dark:text-neutral-100 mb-2 sm:mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">
@@ -50,4 +51,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

@@ -1,6 +1,6 @@
 import Hero from "../components/Hero"
 import Grid from "../components/Grid"
-import Experience from "../components/experience"
+import Education from "../components/Education";
 import { FloatingNav } from "../components/ui/FloatingNavbar"
 import { FaHome } from "react-icons/fa"
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         ]}/>
         <Hero />
         <Grid />
-        <Experience />
+        <Education />
       </div>
     </main>
   );
