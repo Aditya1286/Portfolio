@@ -139,25 +139,25 @@ export const testimonials = [
 export const timeline = [
   {
     year: 2024,
-    title: "Lovely Professional University",
-    degree: "BTech in Computer Science and Engineering ",
+    degree: "B.Tech in Computer Science and Engineering",
     icon: "/logo1.svg",
     Marks: "SGPA: 9.4",
+    description: "Pursuing advanced coursework in Devops and systems engineering at Lovely Professional University.",
   },
   {
     year: 2022,
-    title: "Trident Public School",
-    degree: "Class 12th",
+    degree: "Trident Public School",
     icon: "/logo3.webp",
     Marks: "86%",
+    description: "Qualified JEE Main with a 94.5 percentile, demonstrating exceptional problem-solving skills in Chemistry",
   },
   {
     year: 2020,
-    title: "G.D.Mother International School",
-    degree: "Metric",
+    degree: "G.D. Mother International School",
     icon: "/logo2.webp",
     Marks: "92%",
-  }
+    description: "Achieved a strong foundation in academics with consistent top performance in all subjects.",
+  },
 ];
 export const companies = [
   {
