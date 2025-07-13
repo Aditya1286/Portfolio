@@ -4,7 +4,8 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export function MacbookScrollDemo() {
   return (
-    <div className="h-screen sm:h-[90vh] md:h-[95vh] lg:h-[250vh] overflow-hidden dark:bg-[#1a1a1a] bg-[#1a1a1a] w-[95%] mx-auto relative rounded-xl">
+    <div className="min-h-screen sm:min-h-[70vh] md:min-h-[95vh] lg:min-h-[250vh] p-4 sm:p-0">
+      <div className="h-full overflow-hidden dark:bg-[#1a1a1a] bg-[#1a1a1a] w-full sm:w-[95%] sm:mx-auto relative rounded-xl flex flex-col items-center justify-center min-h-[80vh] sm:min-h-[65vh]">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -18,7 +19,7 @@ export function MacbookScrollDemo() {
       <div className="absolute top-1/3 right-1/3 text-2xl opacity-20 animate-bounce delay-1000">⚡</div>
       
       {/* Main content - centered */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full">
+      <div className="relative z-10">
         <MacbookScroll
           title={
             <div className="space-y-6">
@@ -85,6 +86,7 @@ export function MacbookScrollDemo() {
       
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#1a1a1a] to-transparent"></div>
+    </div>
     </div>
   );
 }
