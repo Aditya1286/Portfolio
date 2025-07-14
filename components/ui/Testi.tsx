@@ -1,7 +1,7 @@
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion"; // Corrected import for Next.js compatibility
 
 import { useEffect, useState } from "react";
 
@@ -55,6 +55,19 @@ export const AnimatedTestimonials = ({
     if (!isClient || rotations.length === 0) return 0;
     return rotations[index] || 0;
   };
+
+  // Add keyboard event listener with React.KeyboardEvent type
+  useEffect(() => {
+    const handleKeyDown = (event: React.KeyboardEvent) => {
+      if (event.key === 'ArrowLeft') {
+        handlePrev();
+      } else if (event.key === 'ArrowRight') {
+        handleNext();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown as unknown as EventListener);
+    return () => window.removeEventListener('keydown', handleKeyDown as unknown as EventListener);
+  }, []);
 
   // Don't render the animated content until client-side
   if (!isClient) {
