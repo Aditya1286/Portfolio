@@ -1,4 +1,4 @@
-"use client"; // This marks the file as a client component
+"use client"; 
 
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";

@@ -2,6 +2,7 @@ import Hero from "../components/Hero"
 import Grid from "../components/Grid"
 import Cert from "../components/Cert"
 import Projects from "../components/Projects"
+import Interest from "../components/Interest"
 import Education from "../components/Education"
 import { FloatingNav } from "../components/ui/FloatingNavbar"
 import Footer from "../components/Footer"
@@ -16,7 +17,7 @@ export default function Home() {
         <Education />
         <Projects />
         <Cert />
-        
+        <Interest />
         <Footer />
       </div>
     </main>
