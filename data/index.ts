@@ -73,14 +73,6 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "",
-  },
-  {
-    id: 2,
     title: "Samhit - Bridging the Mental Health Gap",
     des: "Samhit bridges mental health gaps through early detection, awareness, community support, and professional connections for holistic wellness.",
     img: "/sam.png",
@@ -88,7 +80,7 @@ export const projects = [
     link: "https://github.com/Aditya1286/Samhit.git",
   },
   {
-    id: 3,
+    id: 2,
     title: "Social Impact Tracker - AI-Powered Analytics Platform for NGOs & Organizations",
     des: "Social Impact Tracker enables NGOs to log initiatives, monitor progress, and generate AI-powered reports for data-driven social impact management.",
     img: "/soc.png",
@@ -96,11 +88,19 @@ export const projects = [
     link: "https://github.com/Aditya1286/Social-Impact-Tracker-.git",
   },
   {
-    id: 4,
+    id: 3,
     title: "🎓 Akademix - Modern Educational Management Platform",
     des: "Akademix streamlines educational administration with modern tools for student management, academic tracking, and institutional operations in one comprehensive platform.",
     img: "/akad.png",
     iconLists: ["/re.svg", "/tail.svg", "/jsx.webp", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Aditya1286/Akademix.git",
+  },
+  {
+    id: 4,
+    title: "HopeForward",
+    des: "An NGO dedicated to empowering underprivileged children through education, healthcare, nutrition, and skill development for a brighter future.",
+    img: "/ak.png",
+    iconLists: ["/re.svg", "/tail.svg", "/jsx.webp", "/three.svg"],
     link: "https://github.com/Aditya1286/Akademix.git",
   },
 ];
