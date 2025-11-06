@@ -1,7 +1,7 @@
 import { AnimatedTestimonials } from "./ui/Testi";
 import { SparklesCore } from "./ui/Sparkles";
 export default function AnimatedCertificationsDemo() {
-  
+// cc
 const testimonials = [
     {
       quote:
