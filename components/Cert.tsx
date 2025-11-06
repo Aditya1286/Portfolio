@@ -1,28 +1,28 @@
 import { AnimatedTestimonials } from "./ui/Testi";
 import { SparklesCore } from "./ui/Sparkles";
 export default function AnimatedCertificationsDemo() {
-// cc
+
 const testimonials = [
     {
       quote:
         "Mastered object-oriented programming, multithreading, collections framework, and design patterns. Built enterprise-level applications with Spring Boot and Hibernate.",
       name: "Advanced Java Masterclass",
       designation: "March 2025",
-      src: "https://media.licdn.com/dms/image/v2/D4D22AQHANZzbQS2aUg/feedshare-shrink_800/B4DZWAarABHAAo-/0/1741616233951?e=1755129600&v=beta&t=LWY8y8cf0i86TTZbogd9UK8xq_j_nLpcp2nYoGHSkKU",
+      src: "/cert3.jpg",
     },
     {
       quote:
         "Gained expertise in HTML5, CSS3, Flexbox, Grid, and responsive design principles. Created mobile-first, cross-browser compatible websites with modern UI/UX practices.",
       name: "Responsive Web Design",
       designation: "July 2024",
-      src: "https://media.licdn.com/dms/image/v2/D5622AQGoNL9ERw8lew/feedshare-shrink_800/feedshare-shrink_800/0/1720334002145?e=1755129600&v=beta&t=k0Mo_W8Nkih6kzX7ujZBiCMKfEDxvKAVURqEYwVpzkY",
+      src: "/cert6.png",
     },
     {
       quote:
         "Developed proficiency in SQL queries, database design, normalization, and data manipulation. Worked with complex joins, subqueries, and database optimization techniques.",
       name: "IBM SQL DataBase",
       designation: "Jun 2024",
-      src: "https://media.licdn.com/dms/image/v2/D5622AQHKTzUTDbcwEQ/feedshare-shrink_800/feedshare-shrink_800/0/1718796940986?e=1755129600&v=beta&t=eMxjvhg38KKfPxenrq8AyDBmBUi3wDyNM9ujCYIIVwo",
+      src: "/cert4.jpeg",
     },
     {
       quote:
@@ -43,7 +43,7 @@ const testimonials = [
         "Achieved expertise in complex SQL operations, window functions, CTEs, and advanced query optimization. Demonstrated skills in data analysis and database performance tuning.",
       name: "Hackerrank Sql Advanced",
       designation: "June 2024",
-      src: "https://media.licdn.com/dms/image/v2/D5622AQGw4llK8Y5Mtg/feedshare-shrink_800/feedshare-shrink_800/0/1718915908075?e=1755129600&v=beta&t=MJE3ufZnQe3I8zY2naFNth7Clbn4u-7Vp_RtvEjTGHI",
+      src: "/cert5.jpeg",
     },
   ];
   return (
