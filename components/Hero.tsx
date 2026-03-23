@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaDownload } from "react-icons/fa6";
 
 import MagicButton from './ui/MagicButton';
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
@@ -41,13 +41,22 @@ const Hero = () => {
             Hi! I&apos;m Aditya, a Next.js Developer based in India.
           </p>
 
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex flex-col md:flex-row gap-4 mt-6">
+            <a href="/about">
+              <MagicButton
+                title="About myself"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a href="https://drive.google.com/file/d/19iiVweK28zG6ZGV11GbimnPpkWXCz9ev/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <MagicButton
+                title="Download CV"
+                icon={<FaDownload />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

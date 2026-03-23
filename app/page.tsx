@@ -7,6 +7,7 @@ import Cert from "../components/Cert"
 import Projects from "../components/Projects"
 import Interest from "../components/Interest"
 import Education from "../components/Education"
+import Skills from "../components/Skills"
 import { FloatingNav } from "../components/ui/FloatingNavbar"
 import Footer from "../components/Footer"
 import { navItems } from "../data/index"
@@ -15,13 +16,13 @@ import Lenis from "lenis"
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis({
-  duration: 1,
-  easing: (t) => Math.sin((t * Math.PI) / 2), // smooth easeOutSine
-  touchMultiplier: 2,
-  wheelMultiplier: 1.2,
+      duration: 1,
+      easing: (t) => Math.sin((t * Math.PI) / 2), // smooth easeOutSine
+      touchMultiplier: 2,
+      wheelMultiplier: 1.2,
 
-})
-    const raf = (time:number) => {
+    })
+    const raf = (time: number) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -39,9 +40,10 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <Education />
+        <Skills />
         <Projects />
         <Cert />
+        <Education />
         <Interest />
         <Footer />
       </div>

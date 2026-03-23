@@ -8,6 +8,7 @@ import {
 } from "framer-motion"; // Corrected import from "motion/react" to "framer-motion"
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export const FloatingNav = ({
   navItems,
@@ -48,20 +49,20 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem, idx) => (
-          <a
+          <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
-              navItem.link === pathname && "text-blue-500"
+              (navItem.link === pathname || (navItem.link.includes('#') && pathname === '/')) && "text-blue-500" // basic active state
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
+            <span className="block sm:hidden text-xs">{navItem.icon || navItem.name}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
             {navItem.link === pathname && (
               <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
             )}
-          </a>
+          </Link>
         ))}
       </motion.div>
     </AnimatePresence>

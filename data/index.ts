@@ -1,9 +1,10 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Education", link: "#Edu" },
-  { name: "Projects", link: "#projects" },
-  { name: "Certifications", link: "#cert" },
-  { name: "Contact", link: "#contact" },
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Education", link: "/#Edu" },
+  { name: "Projects", link: "/#projects" },
+  { name: "Certifications", link: "/#cert" },
+  { name: "Contact", link: "/#contact" },
 ];
 
 export const gridItems = [
@@ -108,14 +109,14 @@ export const projects = [
 
 export const timeline = [
   {
-    year: 2024,
+    year: "2027",
     degree: "B.Tech in Computer Science and Engineering",
     icon: "/logo1.svg",
-    Marks: "SGPA: 9.4",
+    Marks: "CGPA: 8.69",
     description: "Pursuing advanced coursework in Devops and systems engineering at Lovely Professional University.",
   },
   {
-    year: 2022,
+    year: 2023,
     degree: "Trident Public School",
     icon: "/logo3.webp",
     Marks: "86%",
