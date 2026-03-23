@@ -9,7 +9,7 @@ const Hero = () => {
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
        */}
-      
+
       {/**
        *  UI: grid
        *  change bg color to bg-black-100 and reduce grid color from
@@ -29,9 +29,9 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-         
 
-          
+
+
           <TextGenerateEffect
             words="Translating Vision Into Seamless Digital Experiences That Feel Natural"
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
@@ -44,7 +44,7 @@ const Hero = () => {
           <div className="flex flex-col md:flex-row gap-4 mt-6">
             <a href="/about">
               <MagicButton
-                title="About myself"
+                title="About Me"
                 icon={<FaLocationArrow />}
                 position="right"
               />
